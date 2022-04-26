@@ -1,0 +1,167 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.6"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "3rdparty/gtest",
+					"jsonFile" : "directory-3rdparty.gtest-Debug-5d2a0107c173a4afb46b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "3rdparty/gtest",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "modules/complex-number",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-modules.complex-number-Debug-87f85e21065a2f98de52.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "modules/complex-number"
+				},
+				{
+					"build" : "modules/complex-number/src",
+					"jsonFile" : "directory-modules.complex-number.src-Debug-3325f559e5b173b37dd1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.6"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "modules/complex-number/src",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "modules/complex-number/test",
+					"jsonFile" : "directory-modules.complex-number.test-Debug-1351326b817574c7d4e4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.6"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "modules/complex-number/test",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "modules/complex-number/application",
+					"jsonFile" : "directory-modules.complex-number.application-Debug-e30aef2669ce31ee0d19.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.6"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "modules/complex-number/application",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "DevTools",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "app_complex-number::@0b5f5d2042b18c720bbe",
+					"jsonFile" : "target-app_complex-number-Debug-8e64379d04fb944fe802.json",
+					"name" : "app_complex-number",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest::@f3fd3778e0da4f993956",
+					"jsonFile" : "target-gtest-Debug-c02def4da7853281b43a.json",
+					"name" : "gtest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "lib_complex-number::@bf56bf7af9b8c2934044",
+					"jsonFile" : "target-lib_complex-number-Debug-0257d4521c4a0492dbfa.json",
+					"name" : "lib_complex-number",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "test_complex-number::@28bbd3876260d1c983e6",
+					"jsonFile" : "target-test_complex-number-Debug-c8da1d7315d7d65bfb97.json",
+					"name" : "test_complex-number",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/marso/Desktop/DevTool/devtools-course-practice/out/build/x64-Debug",
+		"source" : "C:/Users/marso/Desktop/DevTool/devtools-course-practice"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

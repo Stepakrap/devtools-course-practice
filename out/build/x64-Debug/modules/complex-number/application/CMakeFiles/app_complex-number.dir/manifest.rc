@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/marso/Desktop/DevTool/devtools-course-practice/out/build/x64-Debug/modules/complex-number/application/CMakeFiles/app_complex-number.dir/embed.manifest"
