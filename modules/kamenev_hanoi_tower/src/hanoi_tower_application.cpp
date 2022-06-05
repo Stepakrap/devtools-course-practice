@@ -19,7 +19,6 @@ void HanoiTowerApp::help(const char* appname,
 
         "  $ " << appname << " <ringCount> "
         << "<operation> <ringCountArg> <isInstructionPrinted>\n\n"
-    
     m_message = stream.str();
 }
 
@@ -34,15 +33,13 @@ bool validateTypeOfArguments(int argc, const char** argv) {
             return false;
         }
     }
-    if (argc >= 4)
-    {
+    if (argc >= 4) {
         for (size_t i = 0; i < strlen(argv[3]); i++) {
             if (!std::isdigit(argv[3][i])) {
                 return false;
             }
         }
-        if (argc == 5)
-        {
+        if (argc == 5) {
             for (size_t i = 0; i < strlen(argv[4]); i++) {
                 if (!std::isdigit(argv[4][i])) {
                     return false;
@@ -57,8 +54,7 @@ bool HanoiTowerApp::validateArguments(int argc, const char** argv) {
     if (argc == 1) {
         help(argv[0]);
         return false;
-    }
-    else if (argc < 3) {
+    } else if (argc < 3) {
         help(argv[0], "ERROR: Should be at least 3 arguments.\n\n");
         return false;
     }
@@ -92,17 +88,13 @@ ConsoleOperation tryParseToOperation(const char* arg) {
 
     if (strcmp(arg, "print_all_instructions") == 0) {
         operation = ConsoleOperation::print_all_instructions;
-    }
-    else if (strcmp(arg, "solve_hanoi") == 0) {
+    } else if (strcmp(arg, "solve_hanoi") == 0) {
         operation = ConsoleOperation::solve_hanoi;
-    }
-    else if (strcmp(arg, "solve_hanoi_with_arg") == 0) {
+    } else if (strcmp(arg, "solve_hanoi_with_arg") == 0) {
         operation = ConsoleOperation::solve_hanoi_with_arg;
-    }
-    else {
+    } else {
         throw std::string("ERROR: Wrong operation!");
-    }
-    
+    } 
     return operation;
 }
 
@@ -121,20 +113,16 @@ std::string HanoiTowerApp::operator()(int argc,
     try {
         ringCount = tryParseToInt(argv[1]);
         operation = tryParseToOperation(argv[2]);
-        if (argc >= 4)
-        {
+        if (argc >= 4) {
             int val = tryParseToInt(argv[3]);
-            if (val == 228)
-            {
+            if (val == 228) {
                 isInstructionPrinted = true;
             } else {
                 ringArg = tryParseToInt(argv[3]);
-
             }
             ringArg = tryParseToInt(argv[3]);
         }
-        if (argc == 5)
-        {
+        if (argc == 5) {
             ringArg = tryParseToInt(argv[4]);
         }
     }
