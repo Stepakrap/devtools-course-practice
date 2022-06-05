@@ -94,7 +94,7 @@ ConsoleOperation tryParseToOperation(const char* arg) {
         operation = ConsoleOperation::solve_hanoi_with_arg;
     } else {
         throw std::string("ERROR: Wrong operation!");
-    } 
+    }
     return operation;
 }
 
