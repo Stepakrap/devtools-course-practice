@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-#include "include/hanpi_tower_application.h"
+#include "include/hanoi_tower_application.h"
 
 int main(int argc, const char** argv) {
   HanoiTowerApp app;

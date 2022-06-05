@@ -18,7 +18,7 @@ void HanoiTowerApp::help(const char* appname,
         <<
 
         "  $ " << appname << " <ringCount> "
-        << "<operation> <ringCountArg> <isInstructionPrinted>\n\n"
+        << "<operation> <ringCountArg> <isInstructionPrinted>\n\n";
     m_message = stream.str();
 }
 
