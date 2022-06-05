@@ -6,8 +6,8 @@
 #include "include/hanpi_tower_application.h"
 
 int main(int argc, const char** argv) {
-	HanoiTowerApp app;
-	std::string output = app(argc, argv);
-	std::cout << output << std::endl;
-	return 0;
+  HanoiTowerApp app;
+  std::string output = app(argc, argv);
+  std::cout << output << std::endl;
+  return 0;
 }
